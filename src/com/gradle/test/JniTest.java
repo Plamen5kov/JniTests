@@ -3,7 +3,7 @@ package com.gradle.test;
 public class JniTest {
    
 	static{
-		System.load("JniTest");
+		System.load("D:/work/test_java/libs/JniTest.dll");
 	}
 
 	public native void start();
@@ -11,5 +11,9 @@ public class JniTest {
 	public static void main(String[] args) {
 		JniTest test=new JniTest();
 		test.start();
+	}
+	
+	public TestClass getTestClass() { 
+		return new TestClass();
 	}
 }
