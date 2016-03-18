@@ -1,9 +1,15 @@
 package com.gradle.test;
 
+import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class JniTest {
    
 	static{
-		System.load("D:/work/test_java/libs/JniTest.dll");
+		String currentDir = System.getProperty("user.dir");
+		String pathToNativeLib = Paths.get(currentDir, "libs", "JniTest.dll").toString();
+		System.load(pathToNativeLib);
 	}
 
 	public native void start();
