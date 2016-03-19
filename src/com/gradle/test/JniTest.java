@@ -8,7 +8,8 @@ public class JniTest {
    
 	static{
 		String currentDir = System.getProperty("user.dir");
-		String pathToNativeLib = Paths.get(currentDir, "libs", "JniTest.dll").toString();
+//		String pathToNativeLib = Paths.get(currentDir, "libs", "JniTest.dll").toString(); //run in windows x64
+		String pathToNativeLib = Paths.get(currentDir, "libs", "libJniTest.so").toString(); //run in linux x64
 		System.load(pathToNativeLib);
 	}
 
