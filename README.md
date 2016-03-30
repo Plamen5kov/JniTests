@@ -5,4 +5,4 @@ A simple java project loading a [cpp library](https://github.com/Plamen5kov/CppL
 This is an eclipse project. Just open in eclipse(set up for java development) and build.
 
 ### What you might want to know.
-You can experiment with the cpp code by building the [cpp library](https://github.com/Plamen5kov/CppLibrary) and puting the resulting library in `./libs` folder in the eclipse project.
+You can experiment with the cpp code by building the [cpp library](https://github.com/Plamen5kov/CppLibrary) and puting the resulting library in `./libs` folder in the `java_test` eclipse project.
