@@ -28,6 +28,8 @@ JNIEXPORT void JNICALL Java_com_gradle_test_JniTest_start(JNIEnv *env, jobject o
 		__android_log_write(ANDROID_LOG_INFO, "tag here", "C++: I THOUGHT WRONG!");
 	}
 
+	__android_log_write(ANDROID_LOG_INFO, "tag here", "C++: FROM NEWLY COMPILED C++ CODE!!!");
+
 	auto jsScript = JSStringCreateWithUTF8CString("var num = 13; var triple = function(value) { return value * 3 }");
 	auto scriptEvalResult = JSEvaluateScript(jsContext, jsScript, NULL, NULL, 1, NULL);
 	auto resScript = JSStringCreateWithUTF8CString("triple(num)");

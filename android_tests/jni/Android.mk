@@ -1,9 +1,14 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE:= jsc-icu
+LOCAL_SRC_FILES := jni/$(TARGET_ARCH_ABI)/libicu_common.so
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE:= jsc
 LOCAL_SRC_FILES := jni/$(TARGET_ARCH_ABI)/libjsc.so
-LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)
+#LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
