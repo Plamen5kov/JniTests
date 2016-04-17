@@ -1,7 +1,5 @@
 package com.gradle.test;
 
-import java.io.File;
-
 public class JniTest {
    
 	static{

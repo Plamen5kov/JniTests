@@ -13,10 +13,12 @@ public class TestClass implements TestInterface {
 		System.out.println("JAVA: TestClass constructor called");
 	}
 
+	@SuppressWarnings("static-access")
 	public void getStaticVariableFromInterface() { 
 		System.out.println("JAVA: getStaticVariableFromInterface called with TestInterface.MI_INT:" + tc.S_INTERFACE_TEST_VAR);
 	}
 	
+	@SuppressWarnings("static-access")
 	public int getStaticVariableFromInterfaceInt() { 
 		System.out.println("JAVA: getStaticVariableFromInterfaceInt called with TestInterface.MI_INT:" + tc.S_INTERFACE_TEST_VAR);
 		return tc.S_INTERFACE_TEST_VAR;
