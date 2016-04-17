@@ -5,7 +5,6 @@
 #include <android/log.h>
 /* Header for class com_gradle_test_JniTest */
 
-
 #ifndef _Included_com_gradle_test_JniTest
 #define _Included_com_gradle_test_JniTest
 #ifdef __cplusplus
@@ -16,6 +15,10 @@ extern "C" {
  * Method:    start 
  * Signature: ()V
  */
+
+#define JNICALL
+#define JNIEXPORT
+
 JNIEXPORT void JNICALL Java_com_gradle_test_JniTest_start(JNIEnv *env, jobject obj) {
 
 	JSGlobalContextRef m_context;
